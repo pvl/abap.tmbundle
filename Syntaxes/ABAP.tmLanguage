@@ -248,7 +248,7 @@
 			<string>(?ix)\s(
 	        alias|aliases|assert|assign|assigning|
 	        back|bound|byte|
-	        call|check|clear|close|cnt|collect|commit|character|
+	        call|changing|check|clear|close|cnt|collect|commit|character|
 	        communication|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
 	        data|define|definition|deferred|delete|describe|detail|divide|
@@ -265,9 +265,9 @@
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
 	        object|overlay|optional|others|occurrences|offset|
-	        pack|parameters|perform|position|program|provide|public|
+	        pack|parameters|perform|position|private|program|provide|public|
 	        ranges|receive|redefinition|reference|refresh|reject|results|
-	        replace|report|reserve|restore|returning|rollback|read|
+	        raising|ranges|receive|redefinition|reference|refresh|reject|results|
 	        scan|scroll|search|select|shift|skip|sort|sorted|split|standard| 
 	        statics|step|stop|submit|subtract|summary|suppress|section|
 	        tables|table|times|transfer|translate|types|type|
