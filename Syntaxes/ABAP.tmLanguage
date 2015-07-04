@@ -98,7 +98,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(endclass|endmethod|endform)</string>
+			<string>(?i)(endclass|endmethod|endform)</string>
 			<key>name</key>
 			<string>storage.type.block.end.abap</string>
 		</dict>
