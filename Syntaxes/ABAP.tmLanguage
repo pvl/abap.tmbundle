@@ -245,7 +245,7 @@
 		<key>main_keywords</key>
 		<dict>
 			<key>match</key>
-			<string>(?ix)\s(
+			<string>(?ix)(^|\s)(
 	        alias|aliases|assert|assign|assigning|
 	        back|bound|byte|
 	        call|changing|check|clear|close|cnt|collect|commit|character|
