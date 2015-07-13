@@ -98,7 +98,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(endclass|endmethod|endform)</string>
+			<string>(?i)(endclass|endmethod|endform)</string>
 			<key>name</key>
 			<string>storage.type.block.end.abap</string>
 		</dict>
@@ -245,10 +245,10 @@
 		<key>main_keywords</key>
 		<dict>
 			<key>match</key>
-			<string>(?ix)\s(
+			<string>(?ix)(^|\s)(
 	        alias|aliases|assert|assign|assigning|
 	        back|bound|byte|
-	        call|check|clear|close|cnt|collect|commit|character|
+	        call|changing|check|clear|close|cnt|collect|commit|character|
 	        communication|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
 	        data|define|definition|deferred|delete|describe|detail|divide|
@@ -265,8 +265,8 @@
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
 	        object|overlay|optional|others|occurrences|offset|
-	        pack|parameters|perform|position|program|provide|public|
-	        ranges|receive|redefinition|reference|refresh|reject|results|
+	        pack|parameters|perform|position|private|program|provide|public|
+	        raising|ranges|receive|redefinition|reference|refresh|reject|results|
 	        replace|report|reserve|restore|returning|rollback|read|
 	        scan|scroll|search|select|shift|skip|sort|sorted|split|standard| 
 	        statics|step|stop|submit|subtract|summary|suppress|section|
