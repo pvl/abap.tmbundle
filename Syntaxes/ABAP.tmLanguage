@@ -247,13 +247,13 @@
 			<key>match</key>
 			<string>(?ix)(^|\s)(
 	        alias|aliases|assert|assign|assigning|
-	        back|bound|byte|
+	        back|begin|bound|byte|
 	        call|changing|check|clear|close|cnt|collect|commit|character|
 	        communication|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
-	        data|define|definition|deferred|delete|describe|detail|divide|
+	        data|default|define|definition|deferred|delete|describe|detail|divide|
 	        deleting|
-	        endexec|endfunction|
+	        end|endexec|endfunction|
 	        endinterface|endmodule|
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
 	        exporting|extract|exceptions|
