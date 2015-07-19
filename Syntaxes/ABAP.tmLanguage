@@ -266,8 +266,8 @@
 	        method|message|methods|modify|module|move|multiply|match|
 	        object|overlay|optional|others|occurrences|offset|
 	        pack|parameters|perform|position|private|program|protected|provide|public|
-	        raising|ranges|receive|redefinition|reference|refresh|regex|reject|results|
-	        replace|report|reserve|restore|returning|rollback|read|
+	        raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
+	        replace|report|reserve|restore|return|returning|rollback|read|
 	        scan|scroll|search|select|shift|skip|sort|sorted|split|standard| 
 	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
 	        tables|table|times|transfer|translate|types|type|
