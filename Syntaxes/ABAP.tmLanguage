@@ -264,11 +264,11 @@
 	        interface|interfaces|input|insert|implementation|into|
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
-	        object|overlay|optional|others|occurrences|offset|
+	        object|obligatory|overlay|optional|others|occurrences|offset|
 	        pack|parameters|perform|position|private|program|protected|provide|public|
-	        raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
+	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
 	        replace|report|reserve|restore|return|returning|rollback|read|
-	        scan|scroll|search|select|shift|skip|sort|sorted|split|standard| 
+	        scan|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard| 
 	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
 	        tables|table|times|transfer|translate|types|type|
 	        unassign|uline|unpack|update|
