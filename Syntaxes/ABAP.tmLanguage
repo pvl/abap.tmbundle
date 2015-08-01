@@ -247,9 +247,9 @@
 			<key>match</key>
 			<string>(?ix)(^|\s)(
 	        alias|aliases|append|ascending|assert|assign|assigning|
-	        back|begin|bound|byte|
+	        back|begin|binary|bound|byte|
 	        call|changing|check|clear|close|cnt|collect|commit|character|
-	        communication|component|compute|concatenate|condense|constants|
+	        corresponding|communication|component|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
 	        data|descending|default|define|definition|deferred|delete|describe|detail|divide|
 	        deleting|
@@ -264,7 +264,7 @@
 	        interface|interfaces|input|insert|implementation|into|
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
-	        object|obligatory|overlay|optional|others|occurrences|offset|
+	        object|obligatory|overlay|optional|others|occurrences|occurs|offset|
 	        pack|parameters|perform|position|private|program|protected|provide|public|
 	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
 	        replace|report|reserve|restore|return|returning|rollback|read|
