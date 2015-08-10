@@ -158,7 +158,7 @@
 		<key>control_keywords</key>
 		<dict>
 			<key>match</key>
-			<string>(?ix)\s(
+			<string>(?ix)(^|\s)(
 	        at|case|catch|continue|do|elseif|else|endat|endcase|enddo|endif|
 	        endloop|endon|if|loop|on|raise|try
 	        )(?=\s|\.|:)</string>
@@ -246,14 +246,14 @@
 		<dict>
 			<key>match</key>
 			<string>(?ix)(^|\s)(
-	        alias|aliases|assert|assign|assigning|
-	        back|bound|byte|
+	        alias|aliases|append|ascending|assert|assign|assigning|
+	        back|begin|binary|bound|byte|
 	        call|changing|check|clear|close|cnt|collect|commit|character|
-	        communication|compute|concatenate|condense|constants|
+	        corresponding|communication|component|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
-	        data|define|definition|deferred|delete|describe|detail|divide|
+	        data|descending|default|define|definition|deferred|delete|describe|detail|divide|
 	        deleting|
-	        endexec|endfunction|
+	        end|endexec|endfunction|
 	        endinterface|endmodule|
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
 	        exporting|extract|exceptions|
@@ -264,14 +264,14 @@
 	        interface|interfaces|input|insert|implementation|into|
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
-	        object|overlay|optional|others|occurrences|offset|
-	        pack|parameters|perform|position|private|program|provide|public|
-	        raising|ranges|receive|redefinition|reference|refresh|reject|results|
-	        replace|report|reserve|restore|returning|rollback|read|
-	        scan|scroll|search|select|shift|skip|sort|sorted|split|standard| 
-	        statics|step|stop|submit|subtract|summary|suppress|section|
+	        object|obligatory|overlay|optional|others|occurrences|occurs|offset|
+	        pack|parameters|perform|position|private|program|protected|provide|public|
+	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
+	        replace|report|reserve|restore|return|returning|rollback|read|
+	        scan|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard| 
+	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
 	        tables|table|times|transfer|translate|types|type|
-	        unassign|uline|unpack|update|
+	        unassign|uline|unpack|update|using|
 	        value|
 	        when|while|window|write|where|with
 	        )(?=\s|\.|:)</string>
