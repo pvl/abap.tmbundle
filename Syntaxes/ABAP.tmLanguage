@@ -130,7 +130,7 @@
 		<key>abap_constants</key>
 		<dict>
 			<key>match</key>
-			<string>(?ix)\s(initial|null|space)\s</string>
+			<string>(?ix)\s(initial|null|space|abap_true|abap_false)\s</string>
 			<key>name</key>
 			<string>constant.language.abap</string>
 		</dict>
@@ -260,7 +260,7 @@
 	        fetch|fields|format|free|from|function|find|
 	        generate|
 	        hide|
-	        import|importing|index|infotypes|initialization|
+	        import|importing|index|infotypes|initial|initialization|
 	        interface|interfaces|input|insert|implementation|into|
 	        leave|like|line|load|local|length|left|leading|
 	        method|message|methods|modify|module|move|multiply|match|
