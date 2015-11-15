@@ -137,7 +137,7 @@
 		<key>abaptypes</key>
 		<dict>
 			<key>match</key>
-			<string>(?ix)\s(string|xstring|any|c|n|i|p|f|d|t|x)(?=\s|\.)</string>
+			<string>(?ix)\s(string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.)</string>
 			<key>name</key>
 			<string>support.type.abap</string>
 		</dict>
