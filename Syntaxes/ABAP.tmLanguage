@@ -256,7 +256,7 @@
 	        end|endexec|endfunction|
 	        endinterface|endmodule|
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
-	        exporting|extract|exceptions|
+	        exporting|extract|exception|exceptions|
 	        fetch|fields|format|free|from|function|find|
 	        generate|
 	        hide|
