@@ -188,6 +188,7 @@
 	         field-groups|
 	         field-symbols|
 	         function-pool|
+	         left-justified|
 	         line-count|
 	         line-size|
 	         message-id|
@@ -196,8 +197,12 @@
 	         new-line|
 	         new-page|
 	         new-section|
+                 no-gap|
+                 no-sign|
+                 no-zero|
 	         print-control|
 	         read-only|
+	         right-justified|
 	         rp-provide-from-last|
 	         select-options|
 	         selection-screen|
