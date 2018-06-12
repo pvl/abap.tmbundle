@@ -251,7 +251,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?ix)(^|\s)(
-	        alias|aliases|append|ascending|assert|assign|assigning|
+	        abstract|alias|aliases|append|ascending|assert|assign|assigning|
 	        back|begin|binary|bound|byte|
 	        call|changing|check|clear|close|cnt|collect|commit|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|
