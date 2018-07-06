@@ -33,6 +33,18 @@ class example_class IMPLEMENTATION.
 
     DATA(str) = 'abc'. ##NO_TEXT
 
+    DATA: tbl type index table.
+
+    SORT lt_tbl BY id.
+
+    CALL SELECTION-SCREEN c_dynnr STARTING AT 5 5 ENDING AT 60 8.
+    LEAVE TO SCREEN 0.
+
+    COMMIT WORK.
+
+    DATA: boolean type abap_bool.
+
+
   endmethod.
 
 endclass.

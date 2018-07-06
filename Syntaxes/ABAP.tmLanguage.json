@@ -90,7 +90,7 @@
       "name": "constant.language.abap"
     },
     "abaptypes": {
-      "match": "(?ix)\\s(string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\\s|\\.|,)",
+      "match": "(?ix)\\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\\s|\\.|,)",
       "name": "support.type.abap"
     },
     "arithmetic_operator": {
@@ -139,7 +139,7 @@
       "name": "keyword.operator.arithmetic.abap"
     },
     "main_keywords": {
-      "match": "(?ix)(^|\\s)(abstract|alias|aliases|append|ascending|assert|assign|assigning|back|begin|binary|bound|byte|call|changing|check|clear|close|cnt|collect|commit|character|corresponding|communication|component|compute|concatenate|condense|constants|controls|convert|create|currency|data|descending|default|define|definition|deferred|delete|describe|detail|divide|deleting|end|endexec|endfunction|endinterface|endmodule|endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|exporting|extract|exception|exceptions|fetch|fields|format|free|from|function|find|generate|hide|import|importing|index|infotypes|initial|initialization|interface|interfaces|input|insert|implementation|into|leave|like|line|load|local|length|left|leading|method|message|methods|modify|module|move|multiply|match|object|obligatory|overlay|optional|others|occurrences|occurs|offset|pack|parameters|perform|position|private|program|protected|provide|public|radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|replace|report|reserve|restore|return|returning|rollback|read|scan|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|tables|table|times|titlebar|transfer|transformation|translate|types|type|unassign|uline|unpack|update|using|value|when|while|window|write|where|with)(?=\\s|\\.|:)",
+      "match": "(?ix)(^|\\s)(abstract|alias|aliases|append|ascending|assert|assign|assigning|back|begin|binary|bound|byte|call|changing|check|clear|close|cnt|collect|commit|character|corresponding|communication|component|compute|concatenate|condense|constants|controls|convert|create|currency|data|descending|default|define|definition|deferred|delete|describe|detail|divide|deleting|end|endexec|endfunction|ending|endinterface|endmodule|endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|exporting|extract|exception|exceptions|fetch|fields|format|free|from|function|find|generate|hide|import|importing|index|infotypes|initial|initialization|interface|interfaces|input|insert|implementation|into|leave|like|line|load|local|length|left|leading|method|message|methods|modify|module|move|multiply|match|object|obligatory|overlay|optional|others|occurrences|occurs|offset|pack|parameters|perform|position|private|program|protected|provide|public|radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|replace|report|reserve|restore|return|returning|rollback|read|scan|screen|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|statics|starting|step|stop|structure|submatches|submit|subtract|summary|suppress|section|tables|table|times|titlebar|transfer|transformation|translate|types|type|unassign|uline|unpack|update|using|value|when|while|window|write|where|with|work)(?=\\s|\\.|:)",
       "name": "keyword.control.simple.abap"
     },
     "math_operators": {
@@ -181,7 +181,7 @@
       "name": "keyword.operator.other.abap"
     },
     "short_keywords": {
-      "match": "(?i)\\s(add|all|in|get|of|put|ref|set|sum|to)(?=\\s|\\.|:)",
+      "match": "(?i)\\s(add|all|by|in|get|of|put|ref|set|sum|to)(?=\\s|\\.|:)",
       "name": "keyword.control.short.abap"
     },
     "string_operators": {
