@@ -25,7 +25,10 @@ class example_class IMPLEMENTATION.
       DATA(subrc) = sy-subrc.
     endif.
     
+    if abap_true = abap_false.
     
+    endif.
+
   endmethod.
 
 endclass.

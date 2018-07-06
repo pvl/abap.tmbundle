@@ -82,7 +82,7 @@
   ],
   "repository": {
     "abap_constants": {
-      "match": "(?ix)\\s(initial|null|space|abap_true|abap_false)\\s",
+      "match": "(?ix)\\b(initial|null|space|abap_true|abap_false)(?=\\.|\\s)",
       "name": "constant.language.abap"
     },
     "abaptypes": {
