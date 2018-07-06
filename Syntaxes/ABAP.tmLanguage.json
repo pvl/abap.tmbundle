@@ -31,6 +31,10 @@
       "name": "comment.line.pragma.abap"
     },
     {
+      "match": "\\b[0-9]+(\\b|\\.|,)",
+      "name": "constant.numeric.abap"
+    },
+    {
       "begin": "'",
       "end": "'",
       "name": "string.quoted.single.abap",

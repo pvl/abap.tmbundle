@@ -44,6 +44,13 @@ class example_class IMPLEMENTATION.
 
     DATA: boolean type abap_bool.
 
+    DATA: lv_num type i value 6,
+          lv_num2 type i value 8888.
+    
+    if lv_num = 3 OR lv_num2 = 58.
+    endif.
+          
+
 
   endmethod.
 
