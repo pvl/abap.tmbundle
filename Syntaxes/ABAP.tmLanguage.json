@@ -27,6 +27,10 @@
       "name": "comment.line.partial.abap"
     },
     {
+      "match": "##.*?(?=\\s)",
+      "name": "comment.line.pragma.abap"
+    },
+    {
       "begin": "'",
       "end": "'",
       "name": "string.quoted.single.abap",

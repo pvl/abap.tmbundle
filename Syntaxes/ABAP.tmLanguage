@@ -46,6 +46,12 @@
 				<string>comment.line.partial.abap</string>
 			</dict>
 			<dict>
+				<key>match</key>
+				<string>##.*?(?=\s)</string>
+				<key>name</key>
+				<string>comment.line.pragma.abap</string>
+			</dict>
+			<dict>
 				<key>begin</key>
 				<string>'</string>
 				<key>end</key>

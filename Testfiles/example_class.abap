@@ -31,6 +31,8 @@ class example_class IMPLEMENTATION.
     
     endif.
 
+    DATA(str) = 'abc'. ##NO_TEXT
+
   endmethod.
 
 endclass.
