@@ -198,6 +198,10 @@
 						<key>include</key>
 						<string>#keywords_followed_by_braces</string>
 					</dict>
+					<dict>
+						<key>include</key>
+						<string>#system_fields</string>
+					</dict>
 				</array>
 			</dict>
 			<key>logical_operator</key>
@@ -227,6 +231,13 @@
 				<string>(?ix)\s(data|value)(?=\()</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
+			</dict>
+			<key>system_fields</key>
+			<dict>
+				<key>match</key>
+				<string>(?ix)\b(sy-)(abcde|batch|binpt|calld|callr|colno|cpage|cprog|cucol|curow|datar|datlo|datum|dayst|dbcnt|dbnam|dbsysc|dyngr|dynnr|fdayw|fdpos|host|index|langu|ldbpg|lilli|linct|linno|linsz|lisel|listi|loopc|lsind|macol|mandt|marow|modno|msgid|msgno|msgty|msgv[1-4]|opsysc|pagno|pfkey|repid|saprl|scols|slset|spono|srows|staco|staro|stepl|subrc|sysid|tabix|tcode|tfill|timlo|title|tleng|tvar[0-9]|tzone|ucomm|uline|uname|uzeit|vline|wtitl|zonlo)(?=\.|\s)</string>
+				<key>name</key>
+				<string>variable.language.abap</string>
 			</dict>
 			<key>operators</key>
 			<dict>
