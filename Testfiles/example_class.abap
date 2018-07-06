@@ -8,6 +8,8 @@ public section.
   methods: some_method abstract.
 
   methods: another_method
+    importing i_stuff type string,
+              i_more_stuff type string.
     returning value(rv_return) type abap_bool.
 
 protected section.

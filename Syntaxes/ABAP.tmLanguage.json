@@ -86,7 +86,7 @@
       "name": "constant.language.abap"
     },
     "abaptypes": {
-      "match": "(?ix)\\s(string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\\s|\\.)",
+      "match": "(?ix)\\s(string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\\s|\\.|,)",
       "name": "support.type.abap"
     },
     "arithmetic_operator": {
