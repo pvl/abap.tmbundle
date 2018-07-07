@@ -219,14 +219,14 @@
 			<key>logical_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)\s(is|not|or|and)\s</string>
+				<string>(?i)\b(is|not|or|and)\b</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
 			</dict>
 			<key>main_keywords</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(^|\s)(abstract|alias|aliases|append|ascending|assert|assign|assigning|back|begin|binary|bound|byte|call|changing|check|clear|close|cnt|collect|commit|character|corresponding|communication|component|compute|concatenate|condense|constants|controls|convert|create|currency|data|descending|default|define|definition|deferred|delete|describe|detail|divide|deleting|end|endexec|endfunction|ending|endinterface|endmodule|endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|exporting|extract|exception|exceptions|fetch|fields|format|free|from|function|find|generate|hide|import|importing|index|infotypes|initial|initialization|interface|interfaces|input|insert|implementation|into|leave|like|line|load|local|length|left|leading|method|message|methods|modify|module|move|multiply|match|object|obligatory|overlay|optional|others|occurrences|occurs|offset|pack|parameters|perform|position|private|program|protected|provide|public|radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|replace|report|reserve|restore|return|returning|rollback|read|scan|screen|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|statics|starting|step|stop|structure|submatches|submit|subtract|summary|suppress|section|tables|table|times|titlebar|transfer|transformation|translate|types|type|unassign|uline|unpack|update|using|value|when|while|window|write|where|with|work)(?=\s|\.|:)</string>
+				<string>(?ix)(^|\s)(abstract|alias|aliases|append|ascending|assert|assign|assigning|back|begin|binary|bound|byte|call|changing|check|clear|close|cnt|collect|commit|character|corresponding|communication|component|compute|concatenate|condense|constants|controls|convert|create|currency|data|descending|default|define|definition|deferred|delete|describe|detail|divide|deleting|end|endexec|endfunction|ending|endinterface|endmodule|endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|exporting|extract|exception|exceptions|fetch|fields|format|free|from|function|find|generate|hide|import|importing|index|infotypes|initial|initialization|interface|interfaces|input|insert|implementation|into|leave|like|line|load|local|length|left|leading|method|message|methods|modify|module|move|multiply|match|object|obligatory|overlay|optional|others|occurrences|occurs|offset|pack|parameters|perform|position|private|program|protected|provide|public|radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|replace|report|reserve|restore|return|returning|rollback|read|scan|screen|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|statics|starting|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|tables|table|times|titlebar|transfer|transformation|translate|types|type|unassign|uline|unpack|update|using|value|when|while|window|write|where|with|work)(?=\s|\.|:)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>

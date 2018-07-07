@@ -49,7 +49,12 @@ class example_class IMPLEMENTATION.
     
     if lv_num = 3 OR lv_num2 = 58.
     endif.
-          
+    
+    if some_param IS BOUND OR
+       some_param IS SUPPLIED OR
+       some_param IS INITIAL. 
+
+    endif.
 
 
   endmethod.
