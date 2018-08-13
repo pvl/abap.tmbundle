@@ -238,6 +238,10 @@
 						<key>include</key>
 						<string>#short_keywords</string>
 					</dict>
+					<dict>
+						<key>include</key>
+						<string>#keywords_followed_by_braces</string>
+					</dict>
 				</array>
 			</dict>
 			<key>logical_operator</key>
@@ -290,6 +294,13 @@
 	                atan|cos|sin|tan|cosh|sinh|tanh|exp|log|log10|sqrt)\(</string>
 				<key>name</key>
 				<string>keyword.operator.math.abap</string>
+			</dict>
+			<key>keywords_followed_by_braces</key>
+			<dict>
+				<key>match</key>
+				<string>(?ix)\s*(data|value)(?=\()</string>
+				<key>name</key>
+				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>operators</key>
 			<dict>
