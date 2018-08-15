@@ -130,6 +130,10 @@
 				<key>include</key>
 				<string>#abaptypes</string>
 			</dict>
+			<dict>
+			<key>include</key>
+				<string>#system_fields</string>
+			</dict>
 		</array>
 		<key>repository</key>
 		<dict>
@@ -252,6 +256,13 @@
 				<string>(?i)\s(is|not|or|and)\s</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
+			</dict>
+			<key>system_fields</key>
+			<dict>
+				<key>match</key>
+				<string>(?ix)\b(sy-)(abcde|batch|binpt|calld|callr|colno|cpage|cprog|cucol|curow|datar|datlo|datum|dayst|dbcnt|dbnam|dbsysc|dyngr|dynnr|fdayw|fdpos|host|index|langu|ldbpg|lilli|linct|linno|linsz|lisel|listi|loopc|lsind|macol|mandt|marow|modno|msgid|msgno|msgty|msgv[1-4]|opsysc|pagno|pfkey|repid|saprl|scols|slset|spono|srows|staco|staro|stepl|subrc|sysid|tabix|tcode|tfill|timlo|title|tleng|tvar[0-9]|tzone|ucomm|uline|uname|uzeit|vline|wtitl|zonlo)(?=\.|\s)</string>
+				<key>name</key>
+				<string>variable.language.abap</string>
 			</dict>
 			<key>main_keywords</key>
 			<dict>
