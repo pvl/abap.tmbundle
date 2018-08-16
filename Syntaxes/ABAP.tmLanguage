@@ -298,7 +298,7 @@
 			<key>keywords_followed_by_braces</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\s*(data|value)(?=\()</string>
+				<string>(?ix)\s*(data|value|field-symbol)(?=\()</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
