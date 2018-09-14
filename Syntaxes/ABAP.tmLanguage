@@ -140,14 +140,14 @@
 			<key>abap_constants</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\s(initial|null|space|abap_true|abap_false)\s</string>
+				<string>(?ix)\s(initial|null|space|abap_true|abap_false|table_line)\s</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
 			<key>abaptypes</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\s(string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
+				<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
 				<key>name</key>
 				<string>support.type.abap</string>
 			</dict>
@@ -272,34 +272,35 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(^|\s)(
-	        alias|aliases|append|ascending|assert|assign|assigning|
+	        abstract|alias|aliases|append|appending|ascending|assert|assign|assigning|
 	        back|begin|binary|bound|byte|
-	        call|changing|check|clear|close|cnt|collect|commit|character|
+	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
 	        data|descending|default|define|definition|deferred|delete|describe|detail|divide|
 	        deleting|
-	        end|endexec|endfunction|
+	        end|endexec|endfunction|ending|
 	        endinterface|endmodule|
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
 	        exporting|extract|exception|exceptions|
-	        fetch|fields|format|free|from|function|find|
+	        first|fetch|fields|format|free|from|function|find|for|
 	        generate|
 	        hide|
 	        import|importing|index|infotypes|initial|initialization|
 	        interface|interfaces|input|insert|implementation|into|
-	        leave|like|line|load|local|length|left|leading|
+			key|
+	        leave|like|line|load|local|length|left|leading|lower|
 	        method|message|methods|modify|module|move|multiply|match|
-	        object|obligatory|overlay|optional|others|occurrences|occurs|offset|
+	        occurrence|object|obligatory|overlay|optional|others|occurrences|occurs|offset|
 	        pack|parameters|perform|position|private|program|protected|provide|public|
 	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
 	        replace|report|reserve|restore|return|returning|rollback|read|
-	        scan|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard| 
+	        scan|screen|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|starting|
 	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
-	        tables|table|times|titlebar|transfer|transformation|translate|types|type|
+	        tables|table|testing|then|times|titlebar|transfer|transformation|translate|transporting|types|type|
 	        unassign|uline|unpack|update|using|
 	        value|
-	        when|while|window|write|where|with
+	        when|while|window|write|where|with|work
 			 )(?=\s|\.|:)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
@@ -359,7 +360,7 @@
 			<key>short_keywords</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)\s(add|all|in|get|of|put|ref|set|sum|to)(?=\s|\.|:)</string>
+				<string>(?i)\s(add|all|as|by|in|get|no|of|put|ref|set|sum|to)(?=\s|\.|:)</string>
 				<key>name</key>
 				<string>keyword.control.short.abap</string>
 			</dict>
