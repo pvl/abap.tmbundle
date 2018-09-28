@@ -47,7 +47,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>(?<![^\s])##.*?(?=([\.:,\s]))</string>
+				<string>(?&lt;![^\s])##.*?(?=([\.:,\s]))</string>
 				<key>name</key>
 				<string>comment.line.pragma.abap</string>
 			</dict>
