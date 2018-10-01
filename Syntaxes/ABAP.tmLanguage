@@ -53,9 +53,9 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?<!\\)\|(.*?)</string>
+				<string>(?&lt;!\\)\|(.*?)</string>
 				<key>end</key>
-				<string>(?<!\\)\|</string>
+				<string>(?&lt;!\\)\|</string>
 				<key>name</key>
 				<string>string.interpolated.abap</string>
 				<key>patterns</key>
