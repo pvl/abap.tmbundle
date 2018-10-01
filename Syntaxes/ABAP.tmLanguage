@@ -87,6 +87,23 @@
 			</dict>
 			<dict>
 				<key>begin</key>
+				<string>`</string>
+				<key>end</key>
+				<string>`</string>
+				<key>name</key>
+				<string>string.quoted.single.abap</string>
+				<key>patterns</key>
+				<array>
+					<dict>
+						<key>match</key>
+						<string>``</string>
+						<key>name</key>
+						<string>constant.character.escape.abap</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>begin</key>
 				<string>(?i)^\s*(class|method|form)\s+(?=[a-z_][a-z_0-9])</string>
 				<key>beginCaptures</key>
 				<dict>
