@@ -104,13 +104,18 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?i)^\s*(class|method|form)\s+(?=[a-z_][a-z_0-9])</string>
+				<string>(?i)^\s*(class|method|form)\s([a-z_]+[a-z_0-9])</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
 					<dict>
 						<key>name</key>
 						<string>storage.type.block.abap</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.type.block.abap</string>
 					</dict>
 				</dict>
 				<key>end</key>
@@ -119,6 +124,12 @@
 				<string>meta.block.begin.implementation.abap</string>
 				<key>patterns</key>
 				<array>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|abstract|shared\s+memory\s+enabled|(global)*\s*friends|(create\s+(public|protected|private))|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
+						<key>name</key>
+						<string>storage.modifier.class.abap</string>
+					</dict>
 					<dict>
 						<key>begin</key>
 						<string>(?=[A-Za-z_][A-Za-z0-9_]*)</string>
@@ -311,7 +322,7 @@
 	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
-	        data|descending|default|define|definition|deferred|delete|describe|detail|divide|
+	        data|descending|default|define|deferred|delete|describe|detail|divide|
 	        deleting|
 	        end|endexec|endfunction|ending|
 	        endinterface|endmodule|
@@ -321,7 +332,7 @@
 	        generate|
 	        hide|
 	        import|importing|index|infotypes|initial|initialization|
-	        interface|interfaces|input|insert|implementation|into|
+	        interface|interfaces|input|insert|into|
 			key|
 	        leave|like|line|load|local|length|left|leading|lower|
 	        method|message|methods|modify|module|move|multiply|match|
