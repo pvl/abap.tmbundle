@@ -291,10 +291,6 @@
 					</dict>
 					<dict>
 						<key>include</key>
-						<string>#short_keywords</string>
-					</dict>
-					<dict>
-						<key>include</key>
 						<string>#keywords_followed_by_braces</string>
 					</dict>
 				</array>
@@ -317,8 +313,8 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(&lt;=^|\s)(
-	        abstract|alias|aliases|append|appending|ascending|assert|assign|assigning|
-	        back|begin|binary|bound|byte|
+	        abstract|add|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|
+	        back|begin|binary|bound|by|byte|
 	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|
 	        controls|convert|create|currency|
@@ -329,20 +325,21 @@
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
 	        exporting|extract|exception|exceptions|
 	        first|fetch|fields|format|free|from|function|find|for|
-	        generate|
+	        generate|get|
 	        hide|
 	        import|importing|index|infotypes|initial|initialization|
-	        interface|interfaces|input|insert|into|
+	        is|in|interface|interfaces|input|insert|into|
 			key|
 	        leave|like|line|load|local|length|left|leading|lower|
 	        method|message|methods|modify|module|move|multiply|match|
-	        occurrence|object|obligatory|overlay|optional|others|occurrences|occurs|offset|
-	        pack|parameters|perform|position|private|program|protected|provide|public|
+			no|
+	        occurrence|object|obligatory|of|overlay|optional|others|occurrences|occurs|offset|
+	        pack|parameters|perform|position|private|program|protected|provide|public|put|
 	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
-	        replace|report|reserve|restore|return|returning|rollback|read|
-	        scan|screen|scroll|search|select|separated|shift|single|skip|sort|sorted|split|standard|starting|
+	        ref|replace|report|reserve|restore|return|returning|rollback|read|
+	        scan|screen|scroll|search|select|separated|set|shift|single|skip|sort|sorted|split|standard|starting|sum|
 	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
-	        tables|table|testing|then|times|titlebar|transfer|transformation|translate|transporting|types|type|
+	        tables|table|testing|then|times|titlebar|to|transfer|transformation|translate|transporting|types|type|
 	        unassign|uline|unpack|update|using|
 	        value|
 	        when|while|window|write|where|with|work
@@ -401,13 +398,6 @@
 				<string>\s(&amp;&amp;|\?\=)\s</string>
 				<key>name</key>
 				<string>keyword.operator.other.abap</string>
-			</dict>
-			<key>short_keywords</key>
-			<dict>
-				<key>match</key>
-				<string>(?i)\s(add|all|as|by|in|get|no|of|put|ref|set|sum|to)(?=\s|\.|:)</string>
-				<key>name</key>
-				<string>keyword.control.short.abap</string>
 			</dict>
 			<key>string_operators</key>
 			<dict>
