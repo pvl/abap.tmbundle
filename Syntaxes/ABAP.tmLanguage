@@ -185,7 +185,7 @@
 			<key>abap_constants</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\s(initial|null|space|abap_true|abap_false|table_line)\s</string>
+				<string>(?ix)(?&lt;=\s)(initial|null|space|abap_true|abap_false|table_line)(?=\s|\.|,)</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
@@ -199,14 +199,14 @@
 			<key>arithmetic_operator</key>
 			<dict>
 				<key>match</key>
-				<string>\s(\+|\-|\*|\*\*|/|%)\s</string>
+				<string>(?&lt;=\s)(\+|\-|\*|\*\*|/|%)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
 			</dict>
 			<key>comparison_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)\s(&lt;|&gt;|&lt;\=|&gt;\=|\=|&lt;&gt;|eq|ne|lt|le|gt|ge|cs)\s</string>
+				<string>(?i)(?&lt;=\s)(&lt;|&gt;|&lt;\=|&gt;\=|\=|&lt;&gt;|eq|ne|lt|le|gt|ge|cs|cp)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.operator.comparison.abap</string>
 			</dict>
@@ -302,7 +302,7 @@
 			<key>logical_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)\s(is|not|or|and)\s</string>
+				<string>(?i)(&lt;=\s)(not|or|and)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
 			</dict>
@@ -316,7 +316,7 @@
 			<key>main_keywords</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(^|\s)(
+				<string>(?ix)(&lt;=^|\s)(
 	        abstract|alias|aliases|append|appending|ascending|assert|assign|assigning|
 	        back|begin|binary|bound|byte|
 	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
