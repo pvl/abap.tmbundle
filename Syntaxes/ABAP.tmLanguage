@@ -298,7 +298,7 @@
 			<key>logical_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)(&lt;=\s)(not|or|and)(?=\s)</string>
+				<string>(?i)(?&lt;=\s)(not|or|and)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
 			</dict>
@@ -312,7 +312,7 @@
 			<key>main_keywords</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(&lt;=^|\s)(
+				<string>(?ix)(?&lt;=^|\s)(
 	        abstract|add|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|
 	        back|begin|binary|bound|by|byte|
 	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
