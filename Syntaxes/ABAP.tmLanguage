@@ -157,7 +157,7 @@
 				<key>match</key>
 				<string>(?i)(&lt;[A-Za-z_][A-Za-z0-9_]*&gt;)</string>
 				<key>name</key>
-				<string>meta.variable.other.field.symbol.abap</string>
+				<string>variable.other.field.symbol.abap</string>
 			</dict>
 			<dict>
 				<key>include</key>
