@@ -225,66 +225,10 @@
 				<key>match</key>
 				<string>[A-Za-z_][A-Za-z0-9_]*</string>
 			</dict>
-			<key>hyphenated_keywords</key>
-			<dict>
-				<key>match</key>
-				<string>(?ix)(^|\s)(add-corresponding|
-	         authority-check|
-	         break-point|
-	         class-data|
-	         class-method|
-	         class-methods|
-	         divide-corresponding|
-	         display-mode|
-	         editor-call|
-	         end-of-definition|
-	         end-of-page|
-	         end-of-selection|
-			 end-test-injection|
-			 end-test-seam|
-	         field-groups|
-	         field-symbols|
-	         function-pool|
-	         left-justified|
-	         line-count|
-	         line-size|
-	         message-id|
-	         move-corresponding|
-	         multiply-corresponding|
-	         new-line|
-	         new-page|
-	         new-section|
-                 no-gap|
-                 no-sign|
-                 no-zero|
-	         print-control|
-	         read-only|
-	         right-justified|
-	         rp-provide-from-last|
-	         select-options|
-	         selection-screen|
-	         start-of-selection|
-	         subtract-corresponding|
-	         syntax-check|
-	         syntax-trace|
-	         system-call|
-			 test-seam|
-			 test-injection|
-	         top-of-page|
-	         type-pool|
-	         type-pools
-			  )(?=\s|\.|:)</string>
-				<key>name</key>
-				<string>keyword.control.hyphenated.abap</string>
-			</dict>
 			<key>keywords</key>
 			<dict>
 				<key>patterns</key>
 				<array>
-					<dict>
-						<key>include</key>
-						<string>#hyphenated_keywords</string>
-					</dict>
 					<dict>
 						<key>include</key>
 						<string>#main_keywords</string>
@@ -317,33 +261,32 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(?&lt;=^|\s)(
-	        abstract|add|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|
-	        back|begin|binary|bound|by|byte|
-	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
+	        abstract|add|add-corresponding|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|authority-check|
+	        back|begin|binary|bound|break-point|by|byte|
+	        call|cast|changing|check|class-data|class-method|class-methods|clear|close|cnt|collect|commit|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|conv|
 	        controls|convert|create|currency|
-	        data|descending|default|define|deferred|delete|describe|detail|divide|duplicates|
+	        data|descending|default|define|deferred|delete|describe|detail|divide|divide-corresponding|display-mode|duplicates|
 	        deleting|
-	        end|endexec|endfunction|ending|
-	        endinterface|endmodule|
+	        editor-call|end|endexec|endfunction|ending|endinterface|endmodule|end-of-definition|end-of-page|end-of-selection|end-test-injection|end-test-seam|
 	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
 	        exporting|extract|exception|exceptions|
-	        first|fetch|fields|format|free|from|function|find|for|
+	        field-symbols|field-groups|first|fetch|fields|format|free|from|function|find|for|function-pool|
 	        generate|get|
 	        hide|
 	        import|importing|index|infotypes|initial|initialization|
 	        id|is|in|interface|interfaces|input|insert|into|
 			key|
-	        leave|like|line|load|local|length|left|leading|lower|
-	        method|message|methods|modify|module|move|multiply|match|
-			new|no|number|
+	        left-justified|leave|like|line|line-count|line-size|load|local|length|left|leading|lower|
+	        method|message|message-id|methods|modify|module|move|move-corresponding|multiply|multiply-corresponding|match|
+			new|new-line|new-page|new-section|no|no-gap|no-sign|no-zero|number|
 	        occurrence|object|obligatory|of|overlay|optional|others|occurrences|occurs|offset|
-	        pack|parameters|perform|places|position|private|program|protected|provide|public|put|
+	        pack|parameters|perform|places|position|print-control|private|program|protected|provide|public|put|
 	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
-	        ref|replace|report|reserve|restore|return|returning|rollback|read|
-	        scan|screen|scroll|search|select|separated|set|shift|single|skip|sort|sorted|split|standard|starting|sum|
-	        statics|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|
-	        tables|table|testing|then|times|titlebar|to|trailing|transfer|transformation|translate|transporting|types|type|
+	        ref|replace|report|reserve|restore|return|returning|right-justified|rollback|read|read-only|rp-provide-from-last|
+	        scan|screen|scroll|search|select|select-options|selection-screen|
+	        separated|set|shift|single|skip|sort|sorted|split|standard|starting|start-of-selection|sum|subtract-corresponding|statics|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|syntax-check|syntax-trace|system-call|
+	        tables|table|testing|test-seam|test-injection|then|times|titlebar|to|top-of-page|trailing|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
 	        unassign|uline|unpack|update|using|
 	        value|
 	        when|while|window|write|where|with|work
