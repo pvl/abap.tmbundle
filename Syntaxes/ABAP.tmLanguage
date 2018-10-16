@@ -176,7 +176,7 @@
 				<string>#abaptypes</string>
 			</dict>
 			<dict>
-			<key>include</key>
+				<key>include</key>
 				<string>#system_fields</string>
 			</dict>
 		</array>
@@ -240,6 +240,8 @@
 	         end-of-definition|
 	         end-of-page|
 	         end-of-selection|
+			 end-test-injection|
+			 end-test-seam|
 	         field-groups|
 	         field-symbols|
 	         function-pool|
@@ -266,6 +268,8 @@
 	         syntax-check|
 	         syntax-trace|
 	         system-call|
+			 test-seam|
+			 test-injection|
 	         top-of-page|
 	         type-pool|
 	         type-pools
@@ -313,12 +317,12 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(?&lt;=^|\s)(
-	        abstract|add|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|
+	        abstract|add|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|
 	        back|begin|binary|bound|by|byte|
 	        call|cast|changing|check|clear|close|cnt|collect|commit|character|
-	        corresponding|communication|component|compute|concatenate|condense|constants|
+	        corresponding|communication|component|compute|concatenate|condense|constants|conv|
 	        controls|convert|create|currency|
-	        data|descending|default|define|deferred|delete|describe|detail|divide|
+	        data|descending|default|define|deferred|delete|describe|detail|divide|duplicates|
 	        deleting|
 	        end|endexec|endfunction|ending|
 	        endinterface|endmodule|
@@ -328,18 +332,18 @@
 	        generate|get|
 	        hide|
 	        import|importing|index|infotypes|initial|initialization|
-	        is|in|interface|interfaces|input|insert|into|
+	        id|is|in|interface|interfaces|input|insert|into|
 			key|
 	        leave|like|line|load|local|length|left|leading|lower|
 	        method|message|methods|modify|module|move|multiply|match|
-			no|
+			new|no|number|
 	        occurrence|object|obligatory|of|overlay|optional|others|occurrences|occurs|offset|
-	        pack|parameters|perform|position|private|program|protected|provide|public|put|
+	        pack|parameters|perform|places|position|private|program|protected|provide|public|put|
 	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
 	        ref|replace|report|reserve|restore|return|returning|rollback|read|
 	        scan|screen|scroll|search|select|separated|set|shift|single|skip|sort|sorted|split|standard|starting|sum|
-	        statics|step|stop|structure|submatches|submit|subtract|summary|suppress|section|
-	        tables|table|testing|then|times|titlebar|to|transfer|transformation|translate|transporting|types|type|
+	        statics|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|
+	        tables|table|testing|then|times|titlebar|to|trailing|transfer|transformation|translate|transporting|types|type|
 	        unassign|uline|unpack|update|using|
 	        value|
 	        when|while|window|write|where|with|work
