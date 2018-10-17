@@ -53,13 +53,41 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?&lt;!\\)\|(.*?)</string>
+				<string>(?&lt;!\\)(\|)(.*?)</string>
 				<key>end</key>
-				<string>(?&lt;!\\)\|</string>
+				<string>(?&lt;!\\)(\|)</string>
 				<key>name</key>
 				<string>string.interpolated.abap</string>
+				<key>beginCaptures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>constant.character.escape.abap</string>
+					</dict>
+				</dict>
+				<key>endCaptures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>constant.character.escape.abap</string>
+					</dict>
+				</dict>
 				<key>patterns</key>
 				<array>
+					<dict>
+						<key>match</key>
+						<string>({ )|( })</string>
+						<key>name</key>
+						<string>constant.character.escape</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?&lt;={ ).*?(?= })</string>
+						<key>name</key>
+						<string>variable.other.abap</string>
+					</dict>
 					<dict>
 						<key>match</key>
 						<string>\\\|</string>
