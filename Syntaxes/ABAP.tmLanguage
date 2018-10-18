@@ -52,6 +52,12 @@
 				<string>comment.line.pragma.abap</string>
 			</dict>
 			<dict>
+				<key>match</key>
+				<string>\b[0-9]+(\b|\.|,)</string>
+				<key>name</key>
+				<string>constant.numeric.abap</string>
+			</dict>
+			<dict>
 				<key>begin</key>
 				<string>(?&lt;!\\)(\|)(.*?)</string>
 				<key>end</key>
