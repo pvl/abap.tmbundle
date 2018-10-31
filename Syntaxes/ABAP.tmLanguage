@@ -138,7 +138,7 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?i)^\s*(class|method|form)\s([a-z_]+[a-z_0-9])</string>
+				<string>(?i)^\s*(class|method|form)\s([a-z_][a-z_0-9]*)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
