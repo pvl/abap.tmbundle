@@ -160,7 +160,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|abstract|shared\s+memory\s+enabled|(global)*\s*friends|(create\s+(public|protected|private))|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
+						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|deferred|abstract|shared\s+memory\s+enabled|(global|local)*\s*friends|(create\s+(public|protected|private))|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.class.abap</string>
 					</dict>
@@ -295,33 +295,33 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(?&lt;=^|\s)(
-	        abstract|add|add-corresponding|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigning|authority-check|
+	        abstract|add|add-corresponding|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigned|assigning|authority-check|
 	        back|begin|binary|bound|break-point|by|byte|
 	        call|cast|changing|check|class-data|class-method|class-methods|clear|close|cnt|collect|commit|character|
-	        corresponding|communication|component|compute|concatenate|condense|constants|conv|
+	        corresponding|communication|component|compute|concatenate|condense|constants|conv|count|
 	        controls|convert|create|currency|
-	        data|descending|default|define|deferred|delete|describe|detail|divide|divide-corresponding|display-mode|duplicates|
+	        data|descending|default|define|deferred|delete|describe|detail|display|divide|divide-corresponding|display-mode|duplicates|
 	        deleting|
 	        editor-call|end|endexec|endfunction|ending|endinterface|endmodule|end-of-definition|end-of-page|end-of-selection|end-test-injection|end-test-seam|
-	        endprovide|endselect|endtry|endwhile|event|events|exec|exit|export|
+	        endprovide|endselect|endtry|endwhile|enum|event|events|exec|exit|export|
 	        exporting|extract|exception|exceptions|
 	        field-symbols|field-groups|first|fetch|fields|format|free|from|function|find|for|function-pool|
 	        generate|get|
-	        hide|
+	        handle|hide|
 	        import|importing|index|infotypes|initial|initialization|
 	        id|is|in|interface|interfaces|input|insert|into|
 			key|
 	        left-justified|leave|like|line|line-count|line-size|load|local|length|left|leading|lower|
 	        method|message|message-id|methods|modify|module|move|move-corresponding|multiply|multiply-corresponding|match|
-			new|new-line|new-page|new-section|no|no-gap|no-sign|no-zero|number|
+			new|new-line|new-page|new-section|no|no-gap|no-sign|no-zero|non-unique|number|
 	        occurrence|object|obligatory|of|overlay|optional|others|occurrences|occurs|offset|
 	        pack|parameters|perform|places|position|print-control|private|program|protected|provide|public|put|
-	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|
+	        radiobutton|raising|ranges|receive|receiving|redefinition|reference|refresh|regex|reject|results|requested|
 	        ref|replace|report|reserve|restore|return|returning|right-justified|rollback|read|read-only|rp-provide-from-last|
 	        scan|screen|scroll|search|select|select-options|selection-screen|
 	        separated|set|shift|single|skip|sort|sorted|split|standard|starting|start-of-selection|sum|subtract-corresponding|statics|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|syntax-check|syntax-trace|system-call|
 	        tables|table|testing|test-seam|test-injection|then|times|titlebar|to|top-of-page|trailing|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
-	        unassign|uline|unpack|update|using|
+	        unassign|unique|uline|unpack|update|upper|using|
 	        value|
 	        when|while|window|write|where|with|work
 			 )(?=\s|\.|:)</string>
