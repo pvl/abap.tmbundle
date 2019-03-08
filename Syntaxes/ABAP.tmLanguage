@@ -138,7 +138,7 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?i)^\s*(class|method|form)\s([a-z_/][a-z_0-9/]*)</string>
+				<string>(?i)^\s*(class|form)\s([a-z_/][a-z_0-9/]*)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
@@ -169,6 +169,82 @@
 						<string>(?=[A-Za-z_][A-Za-z0-9_]*)</string>
 						<key>contentName</key>
 						<string>entity.name.type.block.abap</string>
+						<key>end</key>
+						<string>(?![A-Za-z0-9_])</string>
+						<key>patterns</key>
+						<array>
+							<dict>
+								<key>include</key>
+								<string>#generic_names</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>begin</key>
+				<string>(?ix)^\s*(method)\s(?:([a-z_\/][a-z_0-9\/]*)~)?([a-z_\/][a-z_0-9\/]*)</string>
+				<key>beginCaptures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>storage.type.block.abap</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.type.abap</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.function.abap</string>
+					</dict>
+				</dict>
+				<key>end</key>
+				<string>\s*\.\s*\n?</string>
+				<key>patterns</key>
+				<array>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=^|\s)(BY\s+DATABASE(\s+PROCEDURE|\s+FUNCTION))(?=\s+|\.)</string>
+						<key>name</key>
+						<string>storage.modifier.method.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=^|\s)(FOR\s+(HDB|LLANG))(?=\s+|\.)</string>
+						<key>name</key>
+						<string>storage.modifier.method.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=\s)(OPTIONS\s+(READ-ONLY|DETERMINISTIC|SUPPRESS\s+SYNTAX\s+ERRORS))(?=\s+|\.)</string>
+						<key>name</key>
+						<string>storage.modifier.method.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=^|\s)(LANGUAGE\s+SQLSCRIPT)(?=\s+|\.)</string>
+						<key>name</key>
+						<string>storage.modifier.method.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=\s)(USING)\s+([a-z_\/][a-z_0-9\/]*)+(?=\s+|\.)</string>
+						<key>captures</key>
+						<dict>
+							<key>1</key>
+							<dict>
+								<key>name</key>
+								<string>storage.modifier.method.abap</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>begin</key>
+						<string>(?=[A-Za-z_][A-Za-z0-9_]*)</string>
 						<key>end</key>
 						<string>(?![A-Za-z0-9_])</string>
 						<key>patterns</key>
