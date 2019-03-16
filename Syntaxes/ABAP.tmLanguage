@@ -58,6 +58,12 @@
 				<string>constant.numeric.abap</string>
 			</dict>
 			<dict>
+				<key>match</key>
+				<string>(?ix)(^|\s+)((PUBLIC|PRIVATE|PROTECTED)\sSECTION)(?=\s+|:|\.)</string>
+				<key>name</key>
+				<string>storage.modifier.class.abap</string>
+			</dict>
+			<dict>
 				<key>begin</key>
 				<string>(?&lt;!\\)(\|)(.*?)</string>
 				<key>end</key>
@@ -307,7 +313,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(?&lt;=^|\s)(USING|TABLES|CHANGING)(?=\s+|\.)</string>
+						<string>(?ix)(?&lt;=^|\s)(USING|TABLES|CHANGING|RAISING)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.form.abap</string>
 					</dict>
@@ -339,6 +345,10 @@
 			</dict>
 			<dict>
 				<key>include</key>
+				<string>#reserved_names</string>
+			</dict>
+			<dict>
+				<key>include</key>
 				<string>#operators</string>
 			</dict>
 			<dict>
@@ -363,13 +373,20 @@
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
+			<key>reserved_names</key>
+			<dict>
+				<key>match</key>
+				<string>(?ix)(?&lt;=\s)(me|super)(?=\s|\.|,|-&gt;)</string>
+				<key>name</key>
+				<string>constant.language.abap</string>
+			</dict>
 			<key>abaptypes</key>
 			<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?ix)\s(abap_bool|data|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
+					<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
 					<key>name</key>
 					<string>support.type.abap</string>	
 				</dict>
