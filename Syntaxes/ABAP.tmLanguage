@@ -407,7 +407,7 @@
 			<key>arithmetic_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?&lt;=\s)(\+|\-|\*|\*\*|/|%)(?=\s)</string>
+				<string>(?i)(?&lt;=\s)(\+|\-|\*|\*\*|/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.abap</string>
 			</dict>
