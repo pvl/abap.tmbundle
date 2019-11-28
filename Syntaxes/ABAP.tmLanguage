@@ -470,7 +470,7 @@
 				<string>(?ix)(?&lt;=^|\s)(
 	        abstract|add|add-corresponding|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigned|assigning|association|authority-check|
 	        back|begin|binary|block|bound|break-point|by|byte|
-	        call|cast|changing|check|class-data|class-method|class-methods|clear|close|cnt|collect|commit|cond|character|
+	        call|cast|changing|check|class-data|class-method|class-methods|class-pool|clear|close|cnt|collect|commit|cond|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|conv|count|
 	        controls|convert|create|currency|
 	        data|descending|default|define|deferred|delete|describe|destination|detail|display|divide|divide-corresponding|display-mode|duplicates|
@@ -482,7 +482,7 @@
 	        generate|get|
 	        handle|hide|hashed|header|
 	        include|import|importing|index|infotypes|initial|initialization|
-	        id|implemented|is|in|interface|interfaces|init|input|insert|instance|into|
+	        id|implemented|is|in|interface|interfaces|interface-pool|init|input|insert|instance|into|
 			key|
 	        left-justified|leave|like|line|line-count|line-size|load|local|log-point|length|left|leading|lower|
 	        matchcode|method|mesh|message|message-id|methods|modify|module|move|move-corresponding|multiply|multiply-corresponding|match|
