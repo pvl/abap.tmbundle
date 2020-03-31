@@ -470,7 +470,7 @@
 				<string>(?ix)(?&lt;=^|\s)(
 	        abstract|add|add-corresponding|adjacent|alias|aliases|all|append|appending|ascending|as|assert|assign|assigned|assigning|association|authority-check|
 	        back|begin|binary|block|bound|break-point|by|byte|
-	        call|cast|changing|check|class-data|class-method|class-methods|class-pool|clear|close|cnt|collect|commit|comment|cond|character|
+	        call|cast|changing|check|class-data|class-events|class-method|class-methods|class-pool|clear|close|cnt|collect|commit|comment|cond|character|
 	        corresponding|communication|component|compute|concatenate|condense|constants|conv|count|
 	        controls|convert|create|currency|
 	        data|descending|default|define|deferred|delete|describe|destination|detail|display|divide|divide-corresponding|display-mode|duplicates|
@@ -480,7 +480,7 @@
 	        exporting|extract|exception|exceptions|
 	        field-symbols|field-groups|field|first|fetch|fields|format|frame|free|from|function|find|for|found|function-pool|
 	        generate|get|
-	        handle|hide|hashed|header|help-request|
+	        handle|handler|hide|hashed|header|help-request|
 	        include|import|importing|index|infotypes|initial|initialization|
 	        id|implemented|is|in|interface|interfaces|interface-pool|intervals|init|input|insert|instance|into|
 			key|
