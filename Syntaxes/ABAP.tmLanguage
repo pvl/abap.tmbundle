@@ -409,14 +409,14 @@
 				<key>match</key>
 				<string>(?i)(?&lt;=\s)(\+|\-|\*|\*\*|/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
 				<key>name</key>
-				<string>keyword.operator.abap</string>
+				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>comparison_operator</key>
 			<dict>
 				<key>match</key>
 				<string>(?i)(?&lt;=\s)(&lt;|&gt;|&lt;\=|&gt;\=|\=|&lt;&gt;|eq|ne|lt|le|gt|ge|cs|cp)(?=\s)</string>
 				<key>name</key>
-				<string>keyword.operator.abap</string>
+				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>control_keywords</key>
 			<dict>
@@ -455,7 +455,7 @@
 				<key>match</key>
 				<string>(?i)(?&lt;=\s)(not|or|and)(?=\s)</string>
 				<key>name</key>
-				<string>keyword.operator.abap</string>
+				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>system_fields</key>
 			<dict>
@@ -546,7 +546,7 @@
 				<key>match</key>
 				<string>(?&lt;=\s)(&amp;&amp;|\?=|\+=|-=|\/=|\*=|&amp;&amp;=)(?=\s)</string>
 				<key>name</key>
-				<string>keyword.operator.abap</string>
+				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>builtin_functions</key>
 			<dict>
