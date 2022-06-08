@@ -504,7 +504,7 @@
 	        matchcode|memory|method|mesh|message|message-id|methods|mode|modify|module|move|move-corresponding|multiply|multiply-corresponding|match|modif|
 		new|new-line|new-page|new-section|next|no|no-display|no-gap|no-gaps|no-sign|no-zero|non-unique|number|
 	        occurrence|object|obligatory|of|order|output|overlay|optional|others|occurrences|occurs|offset|options|
-	        pack|parameter|parameters|partially|perform|pf-status|places|position|preferred|primary|print-control|private|privileged|program|protected|provide|public|put|
+	        pack|parameter|parameters|partially|perform|pf-status|places|position|preferred|primary|print-control|private|privileged|program|protected|provide|public|pushbutton|put|
 	        radiobutton\s+group|raising|range|ranges|receive|receiving|redefinition|reduce|reference|refresh|regex|reject|results|requested|
 	        ref|replace|report|required|reserve|respecting|restore|result\s+xml|result\s+\(|return|returning|right|right-justified|rollback|read|read-only|rp-provide-from-last|run|
 	        scan|screen|scroll|search|select|select-options|selection-screen|set|stamp|state|source|subkey|
