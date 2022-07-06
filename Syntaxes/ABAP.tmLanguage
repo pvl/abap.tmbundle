@@ -485,7 +485,7 @@
 				<string>(?ix)(?&lt;=^|\s)(
 	        abstract|access|add|add-corresponding|adjacent|alias|aliases|all|amdp|append|appending|ascending|as|assert|assign|assigned|assigning|association|authority-check|
 	        back|badi|base|begin|between|binary|blanks|block|bound|break-point|by|by\s+database|byte|
-	        call|calling|cast|casting|cds\s+session|changing|check|checkbox|class-data|class-events|class-method|class-methods|class-pool|clear|client|close|cnt|collect|commit|comment|cond|character|
+	        call|calling|cast|casting|cds\s+session|changing|check|checkbox|class-data|class-events|class-method|class-methods|class-pool|cleanup|clear|client|clients|close|cnt|collect|commit|comment|cond|character|
 	        corresponding|communication|comparing|component|components|compute|concatenate|condense|constants|conv|count|
 	        controls|convert|create|currency|current|
 	        data|database|ddl|decimals|default|define|deferred|delete|descending|describe|destination|detail|display|divide|divide-corresponding|display-mode|distinct|duplicates|
