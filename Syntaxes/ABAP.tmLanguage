@@ -150,7 +150,7 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?i)^\s*(class)\s([a-z_/][a-z_0-9/]*)</string>
+				<string>(?i)^\s*(class)\s([a-z_\/][a-z_0-9\/]*)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
@@ -407,7 +407,7 @@
 			<key>arithmetic_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)(?&lt;=\s)(\+|\-|\*|\*\*|/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
+				<string>(?i)(?&lt;=\s)(\+|\-|\*|\*\*|\/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
