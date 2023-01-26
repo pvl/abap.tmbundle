@@ -53,7 +53,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>(?i)(?&lt;=(?:^|\s|~|-&gt;|-|=&gt;))([a-z_/][a-z_0-9/]*)(?=\s+(?:=|\+=|-=|\*=|\/=|&amp;&amp;=)\s+)</string>
+				<string>(?i)(?&lt;=(?:\s|~|-))(?&lt;=(?:-&gt;|=&gt;))([a-z_/][a-z_0-9/]*)(?=\s+(?:=|\+=|-=|\*=|\/=|&amp;&amp;=)\s+)</string>
 				<key>name</key>
 				<string>variable.other.abap</string>
 			</dict>
@@ -483,37 +483,38 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(?&lt;=^|\s)(
-	        abstract|access|add|add-corresponding|adjacent|alias|aliases|all|amdp|append|appending|ascending|as|assert|assign|assigned|assigning|association|authority-check|
+	        abap-source|abstract|access|add|add-corresponding|adjacent|alias|aliases|all|amdp|append|appending|ascending|as|assert|assign|assigned|assigning|association|authority-check|
 	        back|badi|base|begin|between|binary|blanks|block|bound|break-point|by|by\s+database|byte|
 	        call|calling|cast|casting|cds\s+session|changing|check|checkbox|class-data|class-events|class-method|class-methods|class-pool|cleanup|clear|client|clients|close|cnt|collect|commit|comment|cond|character|
 	        corresponding|communication|comparing|component|components|compute|concatenate|condense|constants|conv|count|
 	        controls|convert|create|currency|current|
-	        data|database|ddl|decimals|default|define|deferred|delete|descending|describe|destination|detail|display|divide|divide-corresponding|display-mode|distinct|duplicates|
+	        data|database|date|ddl|decimals|default|define|deferred|delete|descending|describe|destination|detail|display|divide|divide-corresponding|display-mode|distinct|duplicates|
 	        deleting|
 	        editor-call|empty|end|endenhancement|endexec|endfunction|ending|endmodule|end-of-definition|end-of-page|end-of-selection|end-test-injection|end-test-seam|exit-command|extension|
-	        endprovide|endselect|entries|endtry|endwhile|enhancement|enum|event|events|excluding|exec|exit|export|
-	        exporting|extract|exception|exceptions|
+	        endprovide|endselect|entries|endtry|endwhile|enhancement|enhancement-point|enum|escape|event|events|excluding|exec|exit|export|
+	        exporting|extract|exception|exception-table|exceptions|
 	        field-symbols|field-groups|field|first|fetch|fields|format|frame|free|from|function|find|for|found|function-pool|
 	        generate|get|group|
 	        handle|handler|hide|hashed|header|help-request|
 	        include|import|importing|index|infotypes|initial|initialization|
 		id|implemented|ignoring|is|in|inner|interface|interfaces|interface-pool|intervals|init|input|insert|instance|into|
 		join|
-		key|
+		key|keywords|
 	        language|language\s+graph|language\s+sql|left-justified|leave|let|like|line|lines|line-count|line-size|listbox|list-processing|load|local|log-point|length|left|leading|lower|
 	        matchcode|memory|method|mesh|message|message-id|methods|mode|modify|module|move|move-corresponding|multiply|multiply-corresponding|match|modif|
 		new|new-line|new-page|new-section|next|no|no-display|no-gap|no-gaps|no-sign|no-zero|non-unique|number|
 	        occurrence|object|obligatory|of|order|output|overlay|optional|others|occurrences|occurs|offset|options|
-	        pack|parameter|parameters|partially|perform|pf-status|places|position|preferred|primary|print-control|private|privileged|program|protected|provide|public|pushbutton|put|
+	        pack|parameter|parameter-table|parameters|partially|perform|pf-status|places|position|preferred|primary|print-control|private|privileged|program|protected|provide|public|pushbutton|put|
 	        radiobutton\s+group|raising|range|ranges|receive|receiving|redefinition|reduce|reference|refresh|regex|reject|results|requested|
 	        ref|replace|report|required|reserve|respecting|restore|result\s+xml|result\s+\(|return|returning|right|right-justified|rollback|read|read-only|rp-provide-from-last|run|
-	        scan|screen|scroll|search|select|select-options|selection-screen|set|stamp|state|source|subkey|
-	        seconds|selection-table|separated|set|shift|single|skip|sort|sorted|split|stable|standard|stamp|starting|start-of-selection|sum|subscreen|subtract-corresponding|statics|step|stop|structure|submatches|submit|subtract|summary|supplied|suppress|section|syntax-check|syntax-trace|system-call|switch|
-	        tabbed|tables|table|task|testing|test-seam|test-injection|textpool|then|time|times|title|titlebar|to|top-of-page|trailing|transaction|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
+	        scan|screen|scroll|search|select|select-options|selection-screen|set|stamp|state|statements|source|subkey|
+	        seconds|selection-table|separated|set|shift|single|skip|sort|sorted|split|spots|stable|standard|stamp|starting|start-of-selection|sum|subscreen|subtract-corresponding|statics|step|stop|structure|structures|submatches|submit|subtract|summary|supplied|suppress|section|syntax-check|syntax-trace|system-call|switch|
+	        tabbed|tables|table|task|testing|test-seam|test-injection|textpool|then|time|times|title|titlebar|to|tokens|top-of-page|trailing|transaction|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
 	        unassign|unique|uline|union|unpack|until|update|upper|using|user-command|
 	        value|value-request|visible|
 	        wait|when|while|window|write|where|with|work|workspace|
-		xml)(?=\s|\.|:|,)</string>
+		xml|
+		zone)(?=\s|\.|:|,)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
