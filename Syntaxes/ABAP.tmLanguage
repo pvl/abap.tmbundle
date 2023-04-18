@@ -539,7 +539,7 @@
 			<key>keywords_followed_by_braces</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\b(data|value|field-symbol)\((&lt;?[a-z_\/][a-z_0-9\/]*&gt;?)\)</string>
+				<string>(?ix)\b(data|value|field-symbol|final)\((&lt;?[a-z_\/][a-z_0-9\/]*&gt;?)\)</string>
 				<key>captures</key>
 				<dict>
 					<key>1</key>
