@@ -324,8 +324,8 @@
 						<string>storage.modifier.form.abap</string>
 					</dict>
 					<dict>
-					<key>include</key>
-					<string>#abaptypes</string>
+						<key>include</key>
+						<string>#abaptypes</string>
 					</dict>
 				</array>
 			</dict>
@@ -388,21 +388,21 @@
 			</dict>
 			<key>abaptypes</key>
 			<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
-					<key>name</key>
-					<string>support.type.abap</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?ix)\s(TYPE|REF|TO|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
-					<key>name</key>
-					<string>keyword.control.simple.abap</string>
-				</dict>
-			</array>
+				<key>patterns</key>
+				<array>
+					<dict>
+						<key>match</key>
+						<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
+						<key>name</key>
+						<string>support.type.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)\s(TYPE|REF|TO|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
+						<key>name</key>
+						<string>keyword.control.simple.abap</string>
+					</dict>
+				</array>
 			</dict>
 			<key>arithmetic_operator</key>
 			<dict>
