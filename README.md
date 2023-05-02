@@ -11,6 +11,13 @@ Syntax support for the SAP ABAP language.
 
 You can install this bundle in TextMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
 
+# Testing
+
+The current grammar can be tested at [NovaLightShow](https://novalightshow.netlify.app/) by selecting "From URL" and referring to
+`https://raw.githubusercontent.com/pvl/abap.tmbundle/master/Syntaxes/ABAP.tmLanguage`. 
+
+To test changes, select "From text", paste the grammar XML into the box below, example ABAP code into the content box, and click "Run".
+
 # License
 
 If not otherwise specified (see below), files in this repository fall under the following license:
