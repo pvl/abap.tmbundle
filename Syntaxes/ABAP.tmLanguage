@@ -422,8 +422,8 @@
 			<dict>
 				<key>match</key>
 				<string>(?ix)(^|\s)(
-	        at|case|catch|continue|do|elseif|else|endat|endcase|enddo|endif|
-	        endloop|endon|if|loop|on|raise|try)(?=\s|\.|:)</string>
+	        at|case|catch|continue|do|elseif|else|endat|endcase|endcatch|enddo|endif|
+	        endloop|endon|endtry|endwhile|if|loop|on|raise|try|while)(?=\s|\.|:)</string>
 				<key>name</key>
 				<string>keyword.control.flow.abap</string>
 			</dict>
@@ -491,7 +491,7 @@
 	        data|database|date|ddl|decimals|default|define|deferred|delete|descending|describe|destination|detail|display|divide|divide-corresponding|display-mode|distinct|duplicates|
 	        deleting|
 	        editor-call|empty|end|endenhancement|endexec|endfunction|ending|endmodule|end-of-definition|end-of-page|end-of-selection|end-test-injection|end-test-seam|exit-command|extension|
-	        endprovide|endselect|entries|endtry|endwhile|enhancement|enhancement-point|enum|escape|event|events|excluding|exec|exit|export|
+	        endprovide|endselect|entries|enhancement|enhancement-point|enum|escape|event|events|excluding|exec|exit|export|
 	        exporting|extract|exception|exception-table|exceptions|
 	        field-symbols|field-groups|field|first|fetch|fields|format|frame|free|from|function|find|for|found|function-pool|
 	        generate|get|group|
@@ -512,7 +512,7 @@
 	        tabbed|tables|table|task|testing|test-seam|test-injection|textpool|then|time|times|title|titlebar|to|tokens|top-of-page|trailing|transaction|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
 	        unassign|unique|uline|union|unpack|until|update|upper|using|user-command|
 	        value|value-request|visible|
-	        wait|when|while|window|write|where|with|work|workspace|
+	        wait|when|window|write|where|work|workspace|
 		xml|
 		zone)(?=\s|\.|:|,)</string>
 				<key>name</key>
