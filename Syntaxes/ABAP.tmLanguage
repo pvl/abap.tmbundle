@@ -512,7 +512,7 @@
 	        tabbed|tables|table|task|testing|test-seam|test-injection|textpool|then|time|times|title|titlebar|to|tokens|top-of-page|trailing|transaction|transfer|transformation|translate|transporting|types|type|type-pool|type-pools|
 	        unassign|unique|uline|union|unpack|until|update|upper|using|user-command|
 	        value|value-request|visible|
-	        wait|when|window|write|where|work|workspace|
+	        wait|when|window|write|where|with|work|workspace|
 		xml|
 		zone)(?=\s|\.|:|,)</string>
 				<key>name</key>
