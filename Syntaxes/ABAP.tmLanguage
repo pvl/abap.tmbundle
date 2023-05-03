@@ -172,7 +172,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|deferred|abstract|shared\s+memory\s+enabled|(global|local)*\s*friends|(create\s+(public|protected|private))|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
+						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|deferred|abstract|shared\s+memory\s+enabled|(global|local)*\s*friends|(create\s+(public|protected|private))|for\s+behavior\s+of|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.class.abap</string>
 					</dict>
@@ -220,7 +220,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(?&lt;=^|\s)(BY\s+DATABASE(\s+PROCEDURE|\s+FUNCTION|\s+GRAPH\s+WORKSPACE))(?=\s+|\.)</string>
+						<string>(?ix)(?&lt;=^|\s)(BY\s+DATABASE(\s+PROCEDURE|\s+FUNCTION|\s+GRAPH\s+WORKSPACE)|BY\s+KERNEL\s+MODULE)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.method.abap</string>
 					</dict>
@@ -398,7 +398,7 @@
 					</dict>
 					<dict>
 						<key>match</key>
-						<string>(?ix)\s(TYPE|REF|TO|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
+						<string>(?ix)\s(TYPE|REF|TO|LIKE|LINE|OF|STRUCTURE|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
 						<key>name</key>
 						<string>keyword.control.simple.abap</string>
 					</dict>
