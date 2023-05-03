@@ -299,7 +299,7 @@
 			</dict>
 			<dict>
 				<key>begin</key>
-				<string>(?ix)^\s*(FORM)\s([a-z_\/][a-z_0-9\/]*)</string>
+				<string>(?ix)^\s*(FORM)\s([a-z_\/][a-z_0-9\/\-\?]*)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
@@ -319,13 +319,17 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(?&lt;=^|\s)(USING|TABLES|CHANGING|RAISING)(?=\s+|\.)</string>
+						<string>(?ix)(?&lt;=^|\s)(USING|TABLES|CHANGING|RAISING|IMPLEMENTATION|DEFINITION)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.form.abap</string>
 					</dict>
 					<dict>
 						<key>include</key>
 						<string>#abaptypes</string>
+					</dict>
+					<dict>
+						<key>include</key>
+						<string>#keywords_followed_by_braces</string>
 					</dict>
 				</array>
 			</dict>
@@ -1212,7 +1216,7 @@ zone
 			<key>keywords_followed_by_braces</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)\b(data|value|field-symbol|final)\((&lt;?[a-z_\/][a-z_0-9\/]*&gt;?)\)</string>
+				<string>(?ix)\b(data|value|field-symbol|final|reference|resumable)\((&lt;?[a-z_\/][a-z_0-9\/]*&gt;?)\)</string> 
 				<key>captures</key>
 				<dict>
 					<key>1</key>
