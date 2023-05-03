@@ -375,7 +375,9 @@
 			<key>abap_constants</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(initial|null|space|abap_true|abap_false|table_line)(?=\s|\.|,)</string>
+				<string>(?ix)(?&lt;=\s)(initial|null|space|abap_true|abap_false|abap_undefined|table_line|
+				%_final|%_hints|%_predefined|col_background|col_group|col_heading|col_key|col_negative|col_normal|col_positive|col_total|
+				adabas|as400|db2|db6|hdb|oracle|sybase|mssqlnt|pos_low|pos_high)(?=\s|\.|,)</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
@@ -392,7 +394,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
+						<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|decfloat|decfloat16|decfloat34|utclong|simple|int8|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
 						<key>name</key>
 						<string>support.type.abap</string>
 					</dict>
