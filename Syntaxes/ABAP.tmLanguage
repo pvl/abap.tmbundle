@@ -53,7 +53,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>(?i)(?&lt;=(?:\s|~|-))(?&lt;=(?:-&gt;|=&gt;))([a-z_\/][a-z_0-9\/]*)(?=\s+(?:=|\+=|-=|\*=|\/=|&amp;&amp;=)\s+)</string>
+				<string>(?i)(?&lt;=(?:\s|~|-))(?&lt;=(?:-&gt;|=&gt;))([a-z_\/][a-z_0-9\/]*)(?=\s+(?:=|\+=|-=|\*=|\/=|&amp;&amp;=|&amp;=)\s+)</string>
 				<key>name</key>
 				<string>variable.other.abap</string>
 			</dict>
@@ -1250,7 +1250,7 @@ zone
 			<key>other_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?&lt;=\s)(&amp;&amp;|\?=|\+=|-=|\/=|\*=|&amp;&amp;=)(?=\s)</string>
+				<string>(?&lt;=\s)(&amp;&amp;|&amp;|\?=|\+=|-=|\/=|\*=|&amp;&amp;=|&amp;=)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
