@@ -102,15 +102,21 @@
 					</dict>
 					<dict>
 						<key>match</key>
-						<string>(?&lt;={ ).*?(?= })</string>
-						<key>name</key>
-						<string>variable.other.abap</string>
-					</dict>
-					<dict>
-						<key>match</key>
 						<string>\\\|</string>
 						<key>name</key>
 						<string>constant.character.escape.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=\s)(align|alpha|case|country|currency|date|decimals|exponent|number|pad|sign|style|time|timestamp|timezone|width|xsd|zero)(?=\s\=)</string>
+						<key>name</key>
+						<string>entity.name.property.stringtemplate.abap</string>
+					</dict>
+					<dict>
+						<key>match</key>
+						<string>(?ix)(?&lt;=\=\s)(center|engineering|environment|in|iso|left|leftplus|leftspace|lower|no|out|raw|right|rightplus|rightspace|scale_preserving|scale_preserving_scientific|scientific|scientific_with_leading_zero|sign_as_postfix|simple|space|upper|user|yes)(?=\s)</string>
+						<key>name</key>
+						<string>entity.value.property.stringtemplate.abap</string>
 					</dict>
 				</array>
 			</dict>
@@ -511,10 +517,8 @@ add-corresponding|
 adjacent|
 alias|
 aliases|
-align|
 all|
 allocate|
-alpha|
 amdp|
 analysis|
 analyzer|
@@ -569,7 +573,6 @@ calling|
 cast|
 casting|
 cds|
-center|
 centered|
 change|
 changing|
@@ -692,7 +695,6 @@ endmodule|
 endprovide|
 endselect|
 endwith|
-engineering|
 enhancement|
 enhancement-point|
 enhancement-section|
@@ -702,7 +704,6 @@ entity|
 entries|
 entry|
 enum|
-environment|
 equiv|
 errors|
 escape|
@@ -817,7 +818,6 @@ into|
 inverse|
 inverted-date|
 is|
-iso|
 job|
 join|
 keep|
@@ -835,8 +835,6 @@ leading|
 leave|
 left|
 left-justified|
-leftplus|
-leftspace|
 legacy|
 length|
 let|
@@ -898,7 +896,6 @@ new-line|
 new-page|
 new-section|
 next|
-no|
 no-display|
 no-extension|
 no-gap|
@@ -940,7 +937,6 @@ overflow|
 overlay|
 pack|
 package|
-pad|
 padding|
 page|
 parameter|
@@ -1018,8 +1014,6 @@ return|
 returning|
 right|
 right-justified|
-rightplus|
-rightspace|
 rollback|
 rows|
 rp-provide-from-last|
@@ -1028,11 +1022,7 @@ sap|
 sap-spool|
 save|
 saving|
-scale_preserving|
-scale_preserving_scientific|
 scan|
-scientific|
-scientific_with_leading_zero|
 screen|
 scroll|
 scroll-boundary|
@@ -1058,7 +1048,6 @@ shift|
 shortdump|
 shortdump-id|
 sign|
-sign_as_postfix|
 simple|
 simulation|
 single|
@@ -1132,8 +1121,6 @@ then|
 throw|
 time|
 times|
-timestamp|
-timezone|
 title|
 titlebar|
 to|
@@ -1188,7 +1175,6 @@ visible|
 wait|
 when|
 where|
-width|
 window|
 windows|
 with|
@@ -1200,9 +1186,6 @@ work|
 workspace|
 write|
 xml|
-xsd|
-yes|
-zero|
 zone
 		        	)(?=\s|\.|:|,)</string>
 				<key>name</key>
