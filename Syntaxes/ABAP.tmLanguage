@@ -98,7 +98,7 @@
 						<key>match</key>
 						<string>({ )|( })</string>
 						<key>name</key>
-						<string>constant.character.escape</string>
+						<string>constant.character.escape.abap</string>
 					</dict>
 					<dict>
 						<key>match</key>
