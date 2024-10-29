@@ -387,8 +387,8 @@
 			<key>abap_constants</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(initial|null|space|abap_true|abap_false|abap_undefined|table_line|
-				%_final|%_hints|%_predefined|col_background|col_group|col_heading|col_key|col_negative|col_normal|col_positive|col_total|
+				<string>(?ix)(?&lt;=\s)(initial|null|@?space|@?abap_true|@?abap_false|@?abap_undefined|table_line|
+                                %_final|%_hints|%_predefined|col_background|col_group|col_heading|col_key|col_negative|col_normal|col_positive|col_total|
 				adabas|as400|db2|db6|hdb|oracle|sybase|mssqlnt|pos_low|pos_high)(?=\s|\.|,)</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
@@ -509,6 +509,7 @@ actual|
 add|
 add-corresponding|
 adjacent|
+after|
 alias|
 aliases|
 align|
@@ -793,6 +794,7 @@ inactive|
 incl|
 include|
 includes|
+including|
 increment|
 index|
 index-line|
@@ -957,7 +959,7 @@ places|
 pool|
 position|
 pragmas|
-preceeding|
+preceding|
 precompiled|
 preferred|
 preserving|
@@ -967,6 +969,7 @@ print-control|
 private|
 privileged|
 procedure|
+process|
 program|
 property|
 protected|
