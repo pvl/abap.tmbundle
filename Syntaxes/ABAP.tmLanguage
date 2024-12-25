@@ -504,6 +504,7 @@
 				<key>match</key>
 				<string>(?ix)(?&lt;=^|\s)(
 abap-source|
+abbreviated|
 abstract|
 accept|
 accepting|
@@ -545,6 +546,7 @@ authorization|
 auto|
 back|
 background|
+backup|
 backward|
 badi|
 base|
@@ -575,6 +577,9 @@ cast|
 casting|
 cds|
 centered|
+chain|
+chain-input|
+chain-request|
 change|
 changing|
 channels|
@@ -635,6 +640,8 @@ create|
 currency|
 current|
 cursor|
+cursor-selection|
+customer|
 customer-function|
 data|
 database|
@@ -650,6 +657,7 @@ deep|
 default|
 deferred|
 define|
+defining|
 delete|
 deleting|
 demand|
@@ -673,6 +681,7 @@ duplicate|
 duplicates|
 duration|
 during|
+dynamic|
 dynpro|
 edit|
 editor-call|
@@ -683,10 +692,12 @@ encoding|
 end|
 end-enhancement-section|
 end-of-definition|
+end-of-editing|
 end-of-page|
 end-of-selection|
 end-test-injection|
 end-test-seam|
+endchain|
 endenhancement|
 endexec|
 endfunction|
@@ -706,6 +717,7 @@ entries|
 entry|
 enum|
 equiv|
+errormessage|
 errors|
 escape|
 escaping|
@@ -716,6 +728,7 @@ except|
 exception|
 exception-table|
 exceptions|
+exclude|
 excluding|
 exec|
 execute|
@@ -776,6 +789,7 @@ heading|
 help-id|
 help-request|
 hide|
+high|
 hint|
 hold|
 hotspot|
@@ -783,6 +797,7 @@ icon|
 id|
 identification|
 identifier|
+ids|
 ignore|
 ignoring|
 immediately|
@@ -861,7 +876,9 @@ lock|
 locks|
 log-point|
 logical|
+low|
 lower|
+main|
 mapped|
 mapping|
 margin|
@@ -879,6 +896,7 @@ messages|
 messaging|
 method|
 methods|
+minimum|
 mode|
 modif|
 modifier|
@@ -908,6 +926,7 @@ no-scrolling|
 no-sign|
 no-title|
 no-zero|
+node|
 nodes|
 non-unicode|
 non-unique|
@@ -926,8 +945,8 @@ offset|
 on|
 only|
 open|
-optional|
 option|
+optional|
 options|
 order|
 others|
@@ -946,11 +965,37 @@ parameter-table|
 parameters|
 part|
 partially|
+pattern|
 pcre|
+percentage|
 perform|
 performing|
 permissions|
 pf-status|
+pf01|
+pf02|
+pf03|
+pf04|
+pf05|
+pf06|
+pf07|
+pf08|
+pf09|
+pf10|
+pf11|
+pf12|
+pf13|
+pf14|
+pf15|
+pf16|
+pf17|
+pf18|
+pf19|
+pf20|
+pf21|
+pf22|
+pf23|
+pf24|
 places|
 pool|
 position|
@@ -1018,6 +1063,7 @@ returning|
 right|
 right-justified|
 rollback|
+row|
 rows|
 rp-provide-from-last|
 run|
@@ -1071,6 +1117,7 @@ sql|
 stable|
 stamp|
 standard|
+start-of-editing|
 start-of-selection|
 starting|
 state|
@@ -1096,6 +1143,7 @@ subtract-corresponding|
 suffix|
 sum|
 summary|
+summing|
 supplied|
 supply|
 suppress|
@@ -1176,7 +1224,9 @@ version|
 via|
 visible|
 wait|
+warning|
 when|
+whenever|
 where|
 window|
 windows|
