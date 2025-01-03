@@ -178,7 +178,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|deferred|abstract|shared\s+memory\s+enabled|(global|local)*\s*friends|(create\s+(public|protected|private))|for\s+behavior\s+of|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s(short|medium|long)(?=\s+|\.)</string>
+						<string>(?ix)(^|\s+)(definition|implementation|public|inheriting\s+from|final|deferred|abstract|shared\s+memory\s+enabled|(global|local)*\s*friends|(create\s+(public|protected|private))|for\s+behavior\s+of|for\s+testing|risk\s+level\s+(critical|dangerous|harmless))|duration\s+(short|medium|long)(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.class.abap</string>
 					</dict>
@@ -238,7 +238,7 @@
 					</dict>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(?&lt;=\s)(OPTIONS\s+(READ-ONLY|DETERMINISTIC|SUPPRESS\s+SYNTAX\s+ERRORS))(?=\s+|\.)</string>
+						<string>(?ix)(?&lt;=^|\s)(OPTIONS\s+(READ-ONLY|DETERMINISTIC|SUPPRESS\s+SYNTAX\s+ERRORS))(?=\s+|\.)</string>
 						<key>name</key>
 						<string>storage.modifier.method.abap</string>
 					</dict>
@@ -250,7 +250,7 @@
 					</dict>
 					<dict>
 						<key>match</key>
-						<string>(?ix)(?&lt;=\s)(USING)\s+([a-z_\/][a-z_0-9\/=\&gt;]*)+(?=\s+|\.)</string>
+						<string>(?ix)(?&lt;=^|\s)(USING)\s+([a-z_\/][a-z_0-9\/=\&gt;]*)+(?=\s+|\.)</string>
 						<key>captures</key>
 						<dict>
 							<key>1</key>
@@ -393,16 +393,14 @@
 			<key>abap_constants</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(initial|null|@?space|@?abap_true|@?abap_false|@?abap_undefined|table_line|
-                                %_final|%_hints|%_predefined|col_background|col_group|col_heading|col_key|col_negative|col_normal|col_positive|col_total|
-				adabas|as400|db2|db6|hdb|oracle|sybase|mssqlnt|pos_low|pos_high)(?=\s|\.|,)</string>
+				<string>(?ix)(?&lt;=^|\s)(initial|null|@?space|@?abap_true|@?abap_false|@?abap_undefined|table_line|%_final|%_hints|%_predefined|col_background|col_group|col_heading|col_key|col_negative|col_normal|col_positive|col_total|adabas|as400|db2|db6|hdb|oracle|sybase|mssqlnt|pos_low|pos_high)(?=\s|\.|,)</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
 			<key>reserved_names</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(me|super)(?=\s|\.|,|-&gt;)</string>
+				<string>(?ix)(?&lt;=^|\s)(me|super)(?=\s|\.|,|-&gt;)</string>
 				<key>name</key>
 				<string>constant.language.abap</string>
 			</dict>
@@ -412,13 +410,13 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>(?ix)\s(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|decfloat|decfloat16|decfloat34|utclong|simple|int8|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
+						<string>(?ix)(?&lt;=^|\s)(abap_bool|string|xstring|any|clike|csequence|numeric|xsequence|decfloat|decfloat16|decfloat34|utclong|simple|int8|c|n|i|p|f|d|t|x)(?=\s|\.|,)</string>
 						<key>name</key>
 						<string>support.type.abap</string>
 					</dict>
 					<dict>
 						<key>match</key>
-						<string>(?ix)\s(TYPE|REF|TO|LIKE|LINE|OF|STRUCTURE|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
+						<string>(?ix)(?&lt;=^|\s)(TYPE|REF|TO|LIKE|LINE|OF|STRUCTURE|STANDARD|SORTED|HASHED|INDEX|TABLE|WITH|UNIQUE|NON-UNIQUE|SECONDARY|DEFAULT|KEY)(?=\s|\.|,)</string>
 						<key>name</key>
 						<string>keyword.control.simple.abap</string>
 					</dict>
@@ -427,23 +425,21 @@
 			<key>arithmetic_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)(?&lt;=\s)(\+|\-|\*|\*\*|\/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
+				<string>(?ix)(?&lt;=^|\s)(\+|\-|\*|\*\*|\/|%|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>comparison_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?i)(?&lt;=\s)(&lt;|&gt;|&lt;\=|&gt;\=|\=|&lt;&gt;|eq|ne|lt|le|gt|ge|cs|cp|co|cn|ca|na|ns|np|byte-co|byte-cn|byte-ca|byte-na|byte-cs|byte-ns|o|z|m)(?=\s)</string>
+				<string>(?ix)(?&lt;=^|\s)(&lt;|&gt;|&lt;\=|&gt;\=|\=|&lt;&gt;|eq|ne|lt|le|gt|ge|cs|cp|co|cn|ca|na|ns|np|byte-co|byte-cn|byte-ca|byte-na|byte-cs|byte-ns|o|z|m)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>control_keywords</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(^|\s)(
-	        at|case|catch|continue|do|elseif|else|endat|endcase|endcatch|enddo|endif|
-	        endloop|endon|endtry|endwhile|if|loop|on|raise|try|while)(?=\s|\.|:)</string>
+				<string>(?ix)(?&lt;=^|\s)(at|case|catch|continue|do|elseif|else|endat|endcase|endcatch|enddo|endif|endloop|endon|endtry|endwhile|if|loop|on|raise|try|while)(?=\s|\.|:)</string>
 				<key>name</key>
 				<string>keyword.control.flow.abap</string>
 			</dict>
@@ -1190,7 +1186,7 @@ workspace|
 write|
 xml|
 zone
-		        	)(?=\s|\.|:|,)</string>
+					)(?=\s|\.|:|,)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
@@ -1255,28 +1251,28 @@ zone
 			<key>other_operator</key>
 			<dict>
 				<key>match</key>
-				<string>(?&lt;=\s)(&amp;&amp;|&amp;|\?=|\+=|-=|\/=|\*=|&amp;&amp;=|&amp;=)(?=\s)</string>
+				<string>(?&lt;=^|\s)(&amp;&amp;|&amp;|\?=|\+=|-=|\/=|\*=|&amp;&amp;=|&amp;=)(?=\s)</string>
 				<key>name</key>
 				<string>keyword.control.simple.abap</string>
 			</dict>
 			<key>builtin_functions</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(abs|sign|ceil|floor|trunc|frac|acos|asin|atan|cos|sin|tan|cosh|sinh|tanh|exp|log|log10|sqrt|strlen|xstrlen|charlen|lines|numofchar|dbmaxlen|round|rescale|nmax|nmin|cmax|cmin|boolc|boolx|xsdbool|contains|contains_any_of|contains_any_not_of|matches|line_exists|ipow|char_off|count|count_any_of|count_any_not_of|distance|condense|concat_lines_of|escape|find|find_end|find_any_of|find_any_not_of|insert|match|repeat|replace|reverse|segment|shift_left|shift_right|substring|substring_after|substring_from|substring_before|substring_to|to_upper|to_lower|to_mixed|from_mixed|translate|bit-set|line_index)(?=\()</string>
+				<string>(?ix)(?&lt;=^|\s)(abs|sign|ceil|floor|trunc|frac|acos|asin|atan|cos|sin|tan|cosh|sinh|tanh|exp|log|log10|sqrt|strlen|xstrlen|charlen|lines|numofchar|dbmaxlen|round|rescale|nmax|nmin|cmax|cmin|boolc|boolx|xsdbool|contains|contains_any_of|contains_any_not_of|matches|line_exists|ipow|char_off|count|count_any_of|count_any_not_of|distance|condense|concat_lines_of|escape|find|find_end|find_any_of|find_any_not_of|insert|match|repeat|replace|reverse|segment|shift_left|shift_right|substring|substring_after|substring_from|substring_before|substring_to|to_upper|to_lower|to_mixed|from_mixed|translate|bit-set|line_index)(?=\()</string>
 				<key>name</key>
 				<string>entity.name.function.builtin.abap</string>
 			</dict>
 			<key>sql_types</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(char|clnt|cuky|curr|datn|dats|dec|decfloat16|decfloat34|fltp|int1|int2|int4|int8|lang|numc|quan|raw|sstring|timn|tims|unit|utclong)(?=\s|\(|\))</string>
+				<string>(?ix)(?&lt;=^|\s)(char|clnt|cuky|curr|datn|dats|dec|decfloat16|decfloat34|fltp|int1|int2|int4|int8|lang|numc|quan|raw|sstring|timn|tims|unit|utclong)(?=\s|\(|\))</string>
 				<key>name</key>
 				<string>entity.name.type.sql.abap</string>
 			</dict>
 			<key>sql_functions</key>
 			<dict>
 				<key>match</key>
-				<string>(?ix)(?&lt;=\s)(
+				<string>(?ix)(?&lt;=^|\s)(
 abap_system_timezone|
 abap_user_timezone|
 abs|
@@ -1379,7 +1375,7 @@ utcl_seconds_between|
 uuid|
 var|
 weekday
-                                )(?=\()</string>
+					)(?=\()</string>
 				<key>name</key>
 				<string>entity.name.function.sql.abap</string>
 			</dict>

@@ -7,6 +7,8 @@ Syntax support for the SAP ABAP language.
 
 ![ABAP Screenshot](https://github.com/pvl/abap.tmbundle/raw/master/doc/img/screenshot.png)
 
+Specification: [TextMate Language Grammars](https://macromates.com/manual/en/language_grammars) 
+
 # Installation
 
 You can install this bundle in TextMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
